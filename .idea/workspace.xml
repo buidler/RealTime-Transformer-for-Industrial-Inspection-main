@@ -1,8 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="66bd7b2b-822c-4b70-b37e-0b6487827c62" name="更改" comment="运行环境优化">
+    <list default="true" id="66bd7b2b-822c-4b70-b37e-0b6487827c62" name="更改" comment="翻译为中文版">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configs/rtdetrv2/include/optimizer.yml" beforeDir="false" afterPath="$PROJECT_DIR$/configs/rtdetrv2/include/optimizer.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/references/deploy/rtdetrv2_torch.py" beforeDir="false" afterPath="$PROJECT_DIR$/references/deploy/rtdetrv2_torch.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/yaml_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/yaml_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/transforms/mosaic.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/transforms/mosaic.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/misc/profiler_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/misc/profiler_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/solver/_solver.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/solver/_solver.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/solver/clas_solver.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/solver/clas_solver.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/solver/det_solver.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/solver/det_solver.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/tools/train.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/visualize_paper_results.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,11 +55,14 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python.gpuTest.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/zjy/code/RealTime-Transformer-for-Industrial-Inspection-main&quot;
+    &quot;last_opened_file_path&quot;: &quot;D:/zjy/code/RealTime-Transformer-for-Industrial-Inspection-main&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -57,6 +70,7 @@
       <recent name="D:\zjy\code\RT-DETR\rtdetrv2_pytorch\dataset" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\zjy\code\RealTime-Transformer-for-Industrial-Inspection-main\tools" />
       <recent name="D:\zjy\code\RT-DETR\rtdetrv2_pytorch\dataset\fiber" />
       <recent name="D:\zjy\code\RT-DETR\rtdetrv2_pytorch\configs\rtdetrv2" />
     </key>
@@ -132,7 +146,15 @@
       <option name="project" value="LOCAL" />
       <updated>1768296689369</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="翻译为中文版">
+      <option name="closed" value="true" />
+      <created>1768298676247</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1768298676247</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -142,6 +164,18 @@
     <MESSAGE value="运行基础优化" />
     <MESSAGE value="增加结果可视化" />
     <MESSAGE value="运行环境优化" />
-    <option name="LAST_COMMIT_MESSAGE" value="运行环境优化" />
+    <MESSAGE value="翻译为中文版" />
+    <option name="LAST_COMMIT_MESSAGE" value="翻译为中文版" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tools/train.py</url>
+          <line>3</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

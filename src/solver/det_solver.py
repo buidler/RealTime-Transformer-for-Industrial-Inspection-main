@@ -28,6 +28,11 @@ class DetSolver(BaseSolver):
         start_time = time.time()
         start_epcoch = self.last_epoch + 1
         
+        if self.output_dir and dist_utils.is_main_process():
+            self._rotate_file(self.output_dir / 'last.pth')
+            self._rotate_file(self.output_dir / 'best.pth')
+            self._rotate_file(self.output_dir / 'log.txt')
+
         for epoch in range(start_epcoch, args.epoches):
 
             self.train_dataloader.set_epoch(epoch)
@@ -125,7 +130,8 @@ class DetSolver(BaseSolver):
         test_stats, coco_evaluator = evaluate(module, self.criterion, self.postprocessor,
                 self.val_dataloader, self.evaluator, self.device)
                 
-        if self.output_dir:
+        if self.output_dir and dist_utils.is_main_process():
+            self._rotate_file(self.output_dir / "eval.pth")
             dist_utils.save_on_master(coco_evaluator.coco_eval["bbox"].eval, self.output_dir / "eval.pth")
         
         return

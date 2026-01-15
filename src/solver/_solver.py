@@ -183,6 +183,29 @@ class BaseSolver(object):
         return matched_state, {'missed': missed_list, 'unmatched': unmatched_list}
 
 
+    def _rotate_file(self, path: Path):
+        p = Path(path)
+        if not p.exists():
+            return
+        parent = p.parent
+        stem = p.stem
+        suffix = p.suffix
+        max_idx = 0
+        pattern = f"{stem}_*{suffix}"
+        for existing in parent.glob(pattern):
+            name = existing.stem
+            prefix = stem + "_"
+            if not name.startswith(prefix):
+                continue
+            num_part = name[len(prefix):]
+            if num_part.isdigit():
+                n = int(num_part)
+                if n > max_idx:
+                    max_idx = n
+        new_path = parent / f"{stem}_{max_idx + 1}{suffix}"
+        p.rename(new_path)
+
+
     def fit(self, ):
         raise NotImplementedError('')
 

@@ -27,6 +27,10 @@ class ClasSolver(BaseSolver):
         output_dir = Path(args.output_dir)
         output_dir.mkdir(exist_ok=True)
 
+        if output_dir and dist_utils.is_main_process():
+            self._rotate_file(output_dir / 'checkpoint.pth')
+            self._rotate_file(output_dir / 'log.txt')
+
         start_time = time.time()
         start_epoch = self.last_epoch + 1
         for epoch in range(start_epoch, args.epoches):
