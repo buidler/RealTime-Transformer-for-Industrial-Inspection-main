@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="66bd7b2b-822c-4b70-b37e-0b6487827c62" name="更改" comment="翻译为中文版">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configs/rtdetrv2/include/optimizer.yml" beforeDir="false" afterPath="$PROJECT_DIR$/configs/rtdetrv2/include/optimizer.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/references/deploy/rtdetrv2_torch.py" beforeDir="false" afterPath="$PROJECT_DIR$/references/deploy/rtdetrv2_torch.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/yaml_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/yaml_utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/transforms/mosaic.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/transforms/mosaic.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/misc/profiler_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/misc/profiler_utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/solver/_solver.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/solver/_solver.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/solver/clas_solver.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/solver/clas_solver.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/solver/det_solver.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/solver/det_solver.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/tools/train.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools/visualize_paper_results.py" beforeDir="false" />
-    </list>
+    <list default="true" id="66bd7b2b-822c-4b70-b37e-0b6487827c62" name="更改" comment="可视化训练结果+参数优化+余弦退火+纤维边缘轮廓绘制初步尝试" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -154,7 +142,15 @@
       <option name="project" value="LOCAL" />
       <updated>1768298676247</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="可视化训练结果+参数优化+余弦退火+纤维边缘轮廓绘制初步尝试">
+      <option name="closed" value="true" />
+      <created>1768494048519</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1768494048519</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -165,7 +161,8 @@
     <MESSAGE value="增加结果可视化" />
     <MESSAGE value="运行环境优化" />
     <MESSAGE value="翻译为中文版" />
-    <option name="LAST_COMMIT_MESSAGE" value="翻译为中文版" />
+    <MESSAGE value="可视化训练结果+参数优化+余弦退火+纤维边缘轮廓绘制初步尝试" />
+    <option name="LAST_COMMIT_MESSAGE" value="可视化训练结果+参数优化+余弦退火+纤维边缘轮廓绘制初步尝试" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
